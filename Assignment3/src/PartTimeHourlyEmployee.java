@@ -30,21 +30,16 @@ public class PartTimeHourlyEmployee extends Employee{
 	}
 	
 	//Remove SSN
-		public String introduce1() {
-				return "Executive [firstName= " + firstName + ", lastName= " + lastName + ", age= " + age + 
-						", Address= " + streetNum + " " + streetName + " " + ", " + cityName + zipCode +", " + state + "]\n" + 	
-						"[hourlyPay= " + hourlyPay + ", directDeposit= " + directDeposit + ", id= " + id + 
-						", specialAccomodations= " + specialAccomodations + ", levelOfEducation= " + levelOfEducation + "]";
-
-		}
-		
-		//Remove SSN and paymentINfo
-		public String introduce2() {
-				return "Executive [firstName= " + firstName + ", lastName= " + lastName + ", age= " + age + 
-						", Address= " + streetNum + " " + streetName + " " + ", " + cityName + zipCode +", " + state + "]\n" + 	
-						"[id= " + id + ", specialAccomodations= " + specialAccomodations + ", levelOfEducation= " + levelOfEducation + "]";
-
-		}
+	public String introduce(boolean removeSSN) {
+		return "Executive [firstName= " + firstName + ", lastName= " + lastName + ", age= " + age + 
+		", Address= " + streetNum + " " + streetName + " " + ", " + cityName + zipCode +", " + state + "]\n";
+	}
+			
+	//Remove SSN and paymentINfo
+	public String introduce(int oneOrZero) {
+		return "Executive [firstName= " + firstName + ", lastName= " + lastName + ", age= " + age + 
+		", Address= " + streetNum + " " + streetName + " " + ", " + cityName + zipCode +", " + state + "]\n";
+	}
 	
 	public float computePay(float hours) {
 		if(hours > 40) {

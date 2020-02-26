@@ -23,13 +23,13 @@ public class Customer extends Person{
 	}
 	
 	//Remove SSN
-	public String introduce1() {
+	public String introduce(boolean removeSSN) {
 		return "Executive [firstName= " + firstName + ", lastName= " + lastName + ", age= " + age + 
 		", Address= " + streetNum + " " + streetName + " " + ", " + cityName + zipCode +", " + state + "]\n";
 	}
 			
 	//Remove SSN and paymentINfo
-	public String introduce2() {
+	public String introduce(int oneOrZero) {
 		return "Executive [firstName= " + firstName + ", lastName= " + lastName + ", age= " + age + 
 		", Address= " + streetNum + " " + streetName + " " + ", " + cityName + zipCode +", " + state + "]\n";
 	}
